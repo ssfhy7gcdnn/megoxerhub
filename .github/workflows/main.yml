@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt install ufw
+sudo ufw enable
+sudo ufw enable ssh
+sudo ufw enable http
+sudo ufw enable https
+sudo ufw allow 10000: 30000/udp
+sudo ufw status
+sudo ufw allow 10000:30000/tcp
+sudo apt install python3-pip
+pip install telebot --break-system-packages
+pip install pycryptodome --break-system-packages
+
